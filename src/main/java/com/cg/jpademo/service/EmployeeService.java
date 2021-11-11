@@ -4,25 +4,20 @@ import java.util.List;
 
 import com.cg.jpademo.Model.Employee;
 
-public class EmployeeService {
 
-	public Employee getEmployeeById(int eid) {
-		return null;
-	}
 
-	public List<Employee> getAllEmployees(int eid) {
-		return null;
-	}
+public interface EmployeeService {
 
-	public Employee addEmployee(Employee emp) {
-		return null;
-	}
+	public abstract void addEmployee(Employee employee);
 
-	public Employee updateEmployee(Employee emp) {
-		return null;
-	}
+	public abstract void updateEmployee(Employee employee);
 
-	public Employee deleteEmployee(Employee emp) {
-		return null;
-	}
+	public abstract void removeEmployee(Employee employee);
+
+	public abstract com.cg.jpademo.Employee findEmployeeById(int id);
+
+	void addEmployee(com.cg.jpademo.Employee employee);
+
+	void updateEmployee(com.cg.jpademo.Employee employee);
+
 }
